@@ -26,11 +26,11 @@ export default function ModalInserir(props) {
     return (
       <div className={styles.container}>
         <h1>CADASTRO DE PRODUTOS</h1>
-        <button onClick={()=> props.setOpen(false)}>CLOSE-MODAL</button>
 
-        <div>
+        <div className="formGroup">
           <form>
               <fieldset>
+        <span className="btnClose" onClick={()=> props.setOpen(false)}>X</span>
                 <legend>Novo Produto</legend>
                 <div>
                   <label htmlFor="idNome">Nome</label>
